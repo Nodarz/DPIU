@@ -8,7 +8,7 @@
 
 We give an example of trajectories predicted by our model and the corresponding ground truth as following:
 
-![system design](./img/pic.pdf)
+![system design](./img/pic23.pdf)
 
 ## Installation
 
