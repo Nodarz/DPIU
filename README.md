@@ -59,6 +59,8 @@ After the prepartion work, the whole project should has the following structure:
 ├── sddloader.py                    # sdd dataloader
 ├── test_DPIUNet.py                 # testing code
 ├── train_DPIUNet.py                # training code
+├── train_DPIUNet_4.py                # training code
+├── train_DPIUNet_6.py                # training code
 ├── trainer                         # core operations to train the model
 │   ├── evaluations.py
 │   ├── evaluations_4.py
@@ -69,17 +71,6 @@ After the prepartion work, the whole project should has the following structure:
 │   ├── trainer_AIO_4.py
 │   └── trainer_AIO_6.py
 └── training                        # saved models/memory banks
-    ├── saved_memory
-    │   ├── sdd_social_filter_fut.pt
-    │   ├── sdd_social_filter_past.pt
-    │   └── sdd_social_part_traj.pt
-    ├── training_ae
-    │   └── model_encdec
-    ├── training_selector
-    │   ├── model_selector
-    │   └── model_selector_warm_up
-    └── training_trajectory
-        └── model_encdec_trajectory
 ```
 
 
