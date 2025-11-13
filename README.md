@@ -2,13 +2,13 @@
 
 **Official PyTorch code**
 
-![system design](./imgs/structure.jpg)
+![system design](./img/structure.jpg)
 
 **Abstract**:Accurate prediction of pedestrian motion is crucial for autonomous driving, particularly in path planning and col lision avoidance applications. Most current methods concentrate on spatio-temporal feature parameters(e.g., velocity continuity, social force parameters and poses) extracted from historical trajectories to model pedestrian movement. However, these methodologies fail to adequately capture pedestrian intent and do not dynamically account for behavioral heterogeneity, leading to significant discrepancies with real-world observations. To address this issue, a Dynamic Pedestrian Intention Understanding (DPIU) framework is proposed, which links future intentions to historical experiences. Grounded in cognitive decision-making mechanisms derived from human physiology, DPIU framework is designed to predict pedestrian motion by inferring inherent movement intentions. To establish a comprehensive historical perspective, multi-scale detail feature module is employed, incorporating time-scale-based trajectory segmentation strategy to enhance the representation of pedestrian states. Subsequently, goal intent prediction module is introduced, employiimproves predictive performance in dynamic scenarios, providing a valuable tool for autonomous driving applications.
 
 We give an example of trajectories predicted by our model and the corresponding ground truth as following:
 
-![system design](./imgs/pic.pdf)
+![system design](./img/pic.pdf)
 
 ## Installation
 
