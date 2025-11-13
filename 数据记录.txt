@@ -1,0 +1,32 @@
+watch -n 1.5 nvidia-smi
+cd autodl-tmp/multi
+conda activate my-env
+
+实验组
+python train_MemoNet.py --info try1 --gpu 0 --mode intention --max_epochs 1
+python train_MemoNet_6.py --info try1 --gpu 0 --mode intention --max_epochs 1
+python train_MemoNet_4.py --info try1 --gpu 0 --mode intention --max_epochs 1
+
+
+python train_MemoNet.py --info try1 --gpu 0 --mode addressor_warm --model_ae ./training/training_intention/2023-04-23_try1/model_ae_2023-04-23
+python train_MemoNet_6.py --info try1 --gpu 0 --mode addressor_warm --model_ae ./training/training_intention/2023-04-21_try1_6/model_ae_2023-04-21
+python train_MemoNet_4.py --info try1 --gpu 0 --mode addressor_warm --model_ae ./training/training_intention/2023-04-22_try1_4/model_ae_2023-04-22
+
+
+
+
+python train_MemoNet.py --info try1 --gpu 0 --mode addressor --model_ae ./training/training_addressor_warm/2023-04-23_try1/model_ae_2023-04-23
+python train_MemoNet_6.py --info try1 --gpu 0 --mode addressor --model_ae ./training/training_addressor_warm/2023-04-23_try1_6/model_ae_2023-04-23
+python train_MemoNet_4.py --info try1 --gpu 0 --mode addressor --model_ae ./training/training_addressor_warm/2023-04-23_try1_4/model_ae_2023-04-23
+
+
+python train_MemoNet.py --info try1 --gpu 0 --mode trajectory --model_ae ./training/training_addressor/2023-04-23_try1/model_ae_2023-04-23
+
+python train_MemoNet.py --info try1 --gpu 0 --mode trajectory --model_ae ./training/training_addressor/2023-04-21_try1/model_ae_2023-04-21
+
+
+###############################
+
+intention8(3.7)： 4-23try1final value:4.79189920425415
+intention6(3.7)： 4-21try1final value:4.523433208465576
+intention4(3.7)： 4-22try1final value:4.420794486999512
